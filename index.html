@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafsa - Interactive Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form-styling.css">
+    <!-- Google Fonts for a more professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Personal Information Section -->
+        <section id="personal-info">
+            <div class="personal-header">
+                <img src="1721205363393.jpg" alt="Hafsa Profile Picture" class="profile-pic">
+                <h1>Hafsa</h1>
+                <p>hafsairfan943@gmail.com </p>
+                <p id="welcome-message"></p>
+            </div>
+            <hr>
+            <p>I am pursuing my FSC studies and expanding my knowledge in web development through GIAIC.</p>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>FSC</strong>, from FG degree college </li>
+            </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul class="skills-list" id="skills-list">
+                <li>JavaScript (ES6+)</li>
+                <li>TypeScript</li>
+                <li>React.js & Next.js</li>
+                <li>HTML5 & CSS3 </li>
+                <li>Version Control (Git, GitHub)</li>
+            </ul>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>JavaScript Certification - freeCodeCamp</li>
+                <li>React.js Certification - Udemy</li>
+            </ul>
+        </section>
+
+        <!-- Interactive Buttons -->
+        <div class="buttons">
+            <button id="toggle-skills">Toggle Skills</button>
+            <button id="change-theme">Change Theme</button>
+            <button id="greet-button">Show Greeting</button>
+        </div>
+
+
+        <!-- Form Section -->
+        <section id="form-section">
+            <h2>Enter Your Details</h2>
+            <form id="resume-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="education">Education:</label>
+                <input type="text" id="education" name="education" required>
+
+                <label for="skills">Skills (comma separated):</label>
+                <input type="text" id="skills" name="skills" required>
+
+                <button type="submit">Generate Resume</button>
+                <button id="copy-link">Copy Shareable Link</button>
+                <input type="text" id="shareable-link" readonly>
+                <button id="download-pdf">Download PDF</button>
+
+
+            </form>
+        </section>
+    </div>
+
+
+    <!-- Link TypeScript File -->
+    <script src="script.js"></script>
+    <script src="form.js"></script>
+</body>
+
+</html>
