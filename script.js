@@ -26,31 +26,5 @@ greetButton.addEventListener('click', function () {
     else {
         greeting = 'Good evening';
     }
-    welcomeMessage.textContent = "".concat(greeting, ", ").concat(nameInput.value || 'Hafsa', "!");
-});
-// Grabbing form elements[FORM]
-var form = document.getElementById('resume-form');
-var nameInput = document.getElementById('name');
-var emailInput = document.getElementById('email');
-var educationInput = document.getElementById('education');
-var skillsInput = document.getElementById('skills');
-// Grabbing display elements
-var displayName = document.getElementById('display-name');
-var displayEmail = document.getElementById('display-email');
-var displayEducation = document.getElementById('display-education');
-// Function to handle form submission
-form.addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent page refresh
-    // Update resume sections with form input values
-    displayName.textContent = nameInput.value;
-    displayEmail.textContent = emailInput.value;
-    displayEducation.textContent = educationInput.value;
-    // Update skills list dynamically
-    var skills = skillsInput.value.split(',').map(function (skill) { return skill.trim(); });
-    skillsList.innerHTML = ''; // Clear previous skills
-    skills.forEach(function (skill) {
-        var li = document.createElement('li');
-        li.textContent = skill;
-        skillsList.appendChild(li);
-    });
+    welcomeMessage.textContent = "".concat(greeting, ", ").concat('Hafsa', "!");
 });
